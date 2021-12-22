@@ -40,7 +40,6 @@ elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
 fi
 
 change_panel(){
-if 1==1; then
 	green " "
 	green " "
 	green "================================="
@@ -91,13 +90,6 @@ if test -s /etc/nginx/nginx.conf; then
 else
 	green "==============================="
 	  red "     Nginx未正确安装 请重试"
-	green "==============================="
-	sleep 2s
-	exit 1
-fi
-else
-	green "==============================="
-	  red "    未检测到Trojan面板服务"
 	green "==============================="
 	sleep 2s
 	exit 1
