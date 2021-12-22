@@ -40,7 +40,7 @@ elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
 fi
 
 change_panel(){
-if test -s /etc/systemd/system/trojan-web.service; then
+if 1==1; then
 	green " "
 	green " "
 	green "================================="
